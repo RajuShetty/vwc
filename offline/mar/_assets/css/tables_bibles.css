@@ -1,0 +1,67 @@
+ 
+.shadetabs{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+.shadetabs li{
+  font: 200 125%/2.0 Helvetica, Arial, Verdana, sans-serif;
+  border-bottom: 3px solid #ccc;
+}
+.shadetabs2 li{
+  font: 200 125%/2.0 Helvetica, Arial, Verdana, sans-serif;
+  border-bottom: 3px solid #ccc;
+  list-style-image: url('../img/audio-headphones.png' ); 
+}
+
+.shadetabs3 li{
+  font: 200 125%/2.0 Helvetica, Arial, Verdana, sans-serif;
+  border-bottom: 3px solid #ccc;
+ list-style-image: url('../img/openbook.png' ); 
+ }
+
+.shadetabs4 li{
+  font: 200 125%/2.0 Helvetica, Arial, Verdana, sans-serif;
+  border-bottom: 3px solid #ccc;
+  list-style-image: url('../img/multi-2.png' ); 
+}
+
+.shadetabs5 li{
+  font: 200 125%/2.0 Helvetica, Arial, Verdana, sans-serif;
+  border-bottom: 3px solid #ccc;
+  list-style-image: url('../img/page.png' ); 
+}
+
+.shadetabs6 li{
+  font: 200 125%/2.0 Helvetica, Arial, Verdana, sans-serif;
+  border-bottom: 3px solid #ccc;
+  list-style-image: url('../img/download.png' );
+}
+
+.shadetabs7 li{
+  font: 200 125%/2.0 Helvetica, Arial, Verdana, sans-serif;
+  border-bottom: 3px solid #ccc;
+  list-style-image: url('../img/www.png' );
+}
+li:last-child {
+  border: none;
+}
+ 
+.shadetabs li a{
+  text-decoration: none;
+  color: #AA2023;
+  display: xblock;
+  width: 100px;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+.shadetabs li a:hover {
+  background: #f6f6f6;
+}
+
