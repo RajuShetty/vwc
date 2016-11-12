@@ -19,7 +19,7 @@
 
     <platform name="ios"></platform>
     <platform name="android"></platform>
-    <preference name="phonegap-version" value="cli-6.1.0" />
+    <preference name="phonegap-version" value="cli-6.3.0" />
     <preference name="android-minSdkVersion" value="14" /><!-- Android 4.0 is minimum supported -->
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString"><string>100</string></gap:config-file>
