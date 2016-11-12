@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Live Prayers</title>
+        
+        <!-- Need this for Android with Crosswalk -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+        <meta http-equiv="Content-Security-Policy" 
+                 content="default-src *; 
+                          style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
+                          script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+
+        <script type="text/javascript" src="connection.js"></script>
+        <script type="text/javascript" src="init.js"></script>
+		 <link rel="stylesheet" href="css/googlefontroboto.css" type="text/css">
+    <link rel="stylesheet" href="css/MaterialIcons.css" type="text/css">
+    <link rel="stylesheet" href="css/animsition.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/material.blue-light_blue.css" type="text/css">  
+    <link rel="stylesheet" href="css/swipebox.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+    </head>
+    <body>
+	<div class="back">
+          <a class="mdl-button mdl-js-button mdl-button--icon" href="index.html">
+            <i class="material-icons">arrow_back</i>
+			
+          </a>
+        </div>
+        <div id="online" data-iframe="http://vineyardworkerschurch.org/live-prayers/?appp=2">
+            <!-- the iframe is dynamically created here after we check offline/online connection -->
+        </div>
+        <div id="offline-footer">
+            <div id="offline-msg">Lost connection, functionality is limited.</div>
+            <button class="button button-positive" id="go-offline">Offline Mode</button>
+            <button class="button button-positive" id="close-offline">Close</button>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready( function() {
+                onLoad();
+            } );
+        </script>
+    </body>
+</html>
