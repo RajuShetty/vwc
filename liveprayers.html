@@ -24,10 +24,26 @@
     <link rel="stylesheet" href="css/material.blue-light_blue.css" type="text/css">  
     <link rel="stylesheet" href="css/swipebox.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
-
+	<style>
+	.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+}</style>
+<script type="text/javascript">
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	}); </script>
     </head>
     <body>
+	<div class="se-pre-con"></div>
 	<div class="back">
           <a class="mdl-button mdl-js-button mdl-button--icon" href="index.html">
             <i class="material-icons">&#xE5C4;</i>
@@ -44,10 +60,13 @@
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
         <script type="text/javascript">
             jQuery(document).ready( function() {
                 onLoad();
             } );
         </script>
+		
     </body>
 </html>
