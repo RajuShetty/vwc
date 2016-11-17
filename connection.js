@@ -35,7 +35,7 @@ appTop.conn = {
 			appTop.conn.closeOnline.addEventListener('click', function() { appTop.conn.closeOnlineModal(); });
 		}
 		if( appTop.conn.goOffline ) {
-			appTop.conn.goOffline.addEventListener('click', function() { window.location = 'offline.html'; });
+			appTop.conn.goOffline.addEventListener('click', function() { window.location = './offline.html'; });
 		}
 		if( appTop.conn.goOnline ) {
 			appTop.conn.goOnline.addEventListener('click', function() { window.location = '../index.html'; });
