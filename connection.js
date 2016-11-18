@@ -250,7 +250,7 @@ appTop.conn = {
 				appTop.conn.offlinePrompt();
 			} else if ( window.location.href.indexOf('offline.html') < 0 ) {
 				// just started the app -- offline
-				window.location = 'offline/offline.html';
+				window.location = 'offline.html';
 			} else {
 				// already offline
 			}
