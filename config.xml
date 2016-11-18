@@ -113,7 +113,7 @@
     <gap:splash src="res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:qualifier="land-xhdpi" />
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi" />
 -->
-    <icon src="icon.png" />
+    <icon src="icon-new.png" />
 
     <content src="index.html" />
     <access origin="*" subdomains="true" />
