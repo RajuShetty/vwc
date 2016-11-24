@@ -16,6 +16,16 @@
 <link rel="stylesheet" type="text/css" href="assets/css/page-player.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/tables_bibles.css" />
 
+<!-- CSS files from app theme-->
+ <link rel="stylesheet" href="../css/googlefontroboto.css" type="text/css">
+    <link rel="stylesheet" href="../css/MaterialIcons.css" type="text/css">
+    <link rel="stylesheet" href="../css/animsition.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/sweetalert.css">
+    <!--link rel="stylesheet" href="../css/material.blue-light_blue.css" type="text/css"-->   
+    <link rel="stylesheet" href="../css/swipebox.min.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <!--link rel="stylesheet" href="../css/style.css" -->
+
   <!--[if lte IE 7]>
 	<link href="_assets/css/iehacks.css" rel="stylesheet" type="text/css" />
 	<![endif]-->
@@ -23,27 +33,8 @@
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-    <!-- google analytics -->
-    <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39700598-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
     
-    <style type="text/css">
-<!--
-.style1 {font-size: medium}
--->
-    </style>
+
 </head>
 <a name="mytop"></a>
 <body>
@@ -55,7 +46,7 @@
 	</div>
 </header>
 index nav-->
-<nav id="nav">
+<!--nav id="nav">
 	<div class="ym-wrapper">
 		<div class="ym-hlist">
 			<ul>
@@ -63,7 +54,7 @@ index nav-->
 			</ul>
 		</div>
 	</div>
-</nav>
+</nav-->
 <div class="ym-wrapper ym-noprint">
     	<div class="ym-wbox">
 
@@ -84,10 +75,11 @@ index nav-->
   <p class="faded">मराठी भाषेत पवित्र बायबल पासून एक पुस्तक निवडा</p>
 <hr />
 </div>
+<!-- chapter list 
 <div class="ym-grid linearize-level-2">
-<h1> Coming Soon </h1>
-<!-- chapter list -->
-  <!--div class="ym-g50 ym-gl">
+
+
+  <div class="ym-g50 ym-gl">
   <h3>नवा करार - <span class="dimmed">O.T.</span></h3>
  <ul id="maintab" class="shadetabs">
 <li>Gn [1] <a href="01/1.htm" >उत्पत्ति <i class="icon-headphones pull-right"></i></a></li>
@@ -164,7 +156,7 @@ index nav-->
                         </ul>
     </div>
 	 <!-- end chapter list -->
-</div>
+</div -->
 
 </div>
 </div><!-- ym-wbox end -->
@@ -193,7 +185,7 @@ index nav-->
 	</div>
 </footer-->
 </body>
-</script><script type="text/javascript" src="assets/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="assets/js/soundmanager2.js"></script>
 <script type="text/javascript" src="assets/js/page-player.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
@@ -204,4 +196,21 @@ soundManager.setup({
 });
 
 </script>
+   <!-- Script from theme-->
+<script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/jqueryanimsition.js"></script>
+    <script src="../js/sweetalert.min.js"></script> 
+    <script src="../js/materialmin.js"></script>
+    <script src="../js/jquery.swipebox.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/function.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+    </script>
 </html>
