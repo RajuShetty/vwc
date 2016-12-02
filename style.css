@@ -13,7 +13,7 @@ body, html {
     height: 100%;
     width: 100%;
     position: relative;
-    z-index: 3;
+    z-index: 1;
     overflow-y: scroll !important;
     overflow-x: hidden !important;
     -webkit-overflow-scrolling: touch !important;
@@ -21,9 +21,13 @@ body, html {
 
 #online iframe {
     width: 100%;
-    height: 100%;
+    height: 100% !important;
 	
 }
+.iframe-wrapper iframe {
+   width: 100%;
+   height: 100%;
+ }
 
 #offline-footer, #online-footer {
     height: 0; /* set to zero so it's not clicked on when opacity: 0 */
