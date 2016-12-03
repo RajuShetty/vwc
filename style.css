@@ -1,5 +1,17 @@
-body, html {
-    margin: 0; padding: 0; height: 100%; overflow: hidden;
+html {
+	height:100%;
+}
+
+body {
+	height:100%;
+	overflow:hidden;
+}
+	
+#page {
+	position:absolute;
+	overflow:auto;
+	height:100%;
+	width:100%;
 }
 
 #content {
