@@ -26,11 +26,11 @@ function onLoad() {
 
 function onDeviceReady() {
 	console.log('device is ready');
-	
-window.plugins.PushbotsPlugin.initialize("584ccdb04a9efad7448b4567", {"android":{"sender_id":"286516895302"}});
-if ( navigator.splashscreen ) {
+
+	if ( navigator.splashscreen ) {
 		navigator.splashscreen.hide();
 	}
+
 	// start the offline check now
 	appInit( 'device_ready' );
 }

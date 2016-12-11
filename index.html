@@ -20,6 +20,10 @@
   </head>
 
   <body>
+  <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+</div>
     <div class="animsition">
       <!-- Email -->
       <div id="slideout">
@@ -411,7 +415,8 @@
     <script src="js/jquery.swipebox.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/function.js"></script>
-
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <!-- Initialize Swiper -->
     <script>
     var swiper = new Swiper('.swiper-container', {
