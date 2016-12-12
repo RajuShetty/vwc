@@ -115,11 +115,11 @@ ul.playlist li:hover a {
 
 ul.playlist li.sm2_playing,
 ul.playlist li.sm2_playing:hover {
-	background:#cbc0a9 url(../img/audio-play.png) no-repeat 10px 50%;
+	background:#cbc0a9 url(../img/audio-pause.png) no-repeat 10px 50%;
 }
 
 ul.playlist li.sm2_paused {
-	background:#E2DCCF url(../img/audio-pause.png) no-repeat 10px 50%;
+	background:#E2DCCF url(../img/audio-play.png) no-repeat 10px 50%;
 }
 
 ul.playlist li.sm2_playing:hover a,
