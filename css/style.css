@@ -165,6 +165,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 .bg-shop {
 	background: url('../img/shop.jpg') no-repeat center / cover;
 }
+.bg-slide {
+	background: url('../img/slide3.jpg') no-repeat center / cover;
+}
 .bg-blog {
 	background: url('../img/petersilway.jpg') no-repeat center / cover;
 }
