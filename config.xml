@@ -34,7 +34,7 @@
     <preference name="StatusBarStyle" value="blacktranslucent" />
 
    
-    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" spec="5.1.1" />
+    <!-- gap:plugin name="cordova-plugin-x-socialsharing" source="npm" spec="5.1.1" -->
     <gap:plugin name="cordova-plugin-whitelist" source="npm" spec="1.2.2" />
     <gap:plugin name="cordova-plugin-device" source="npm" spec="1.1.2" />
     <gap:plugin name="cordova-plugin-dialogs" source="npm" spec="1.2.1" />
