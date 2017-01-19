@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "org.vineyardworkerschurch.app"
-        version   = "1.0.5"
-		android-versionCode="10005"
+        version   = "1.0.6"
+		android-versionCode="10006"
 		>
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
@@ -13,7 +13,7 @@
 
     <description>
         Vineyard workers church, pune.
-    </description>
+    </description> 
 
     <author href="http://vineyardworkerschurch.org/" email="Rajushetty.b@gmail.com">
         vineyard workers church
@@ -36,7 +36,7 @@
    
     <!-- gap:plugin name="cordova-plugin-x-socialsharing" source="npm" spec="5.1.1" -->
     <gap:plugin name="cordova-plugin-whitelist" source="npm" spec="1.2.2" />
-    <gap:plugin name="cordova-plugin-device" source="npm" spec="1.1.2" />
+    <!--gap:plugin name="cordova-plugin-device" source="npm" spec="1.1.2" -->
     <gap:plugin name="cordova-plugin-dialogs" source="npm" spec="1.2.1" />
     <gap:plugin name="cordova-plugin-geolocation" source="npm" spec="2.2.0" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" spec="1.4.0" />
