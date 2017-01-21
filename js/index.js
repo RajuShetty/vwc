@@ -17,10 +17,21 @@ var app = {
     onDeviceReady: function() {
     window.plugins.PushbotsPlugin.initialize("584ccdb04a9efad7448b4567", {"android":{"sender_id":"286516895302"}});
 	
-	
+	// Should be called once app receive the notification only while the application is open or in background
+		window.plugins.PushbotsPlugin.on("notification:received", function(data){
+			console.log("received:" + JSON.stringify(data));
+		});
+		
+		// Should be called once the notification is clicked
+		window.plugins.PushbotsPlugin.on("notification:clicked", function(data){
+			console.log("clicked:" + JSON.stringify(data));
+		});
+		
+        app.receivedEvent('deviceready');
 
     },
-    // Update DOM on a Received Event
+    
+	 // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
@@ -31,20 +42,7 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
-	
-	// Should be called once app receive the notification only while the application is open or in background
-    window.plugins.PushbotsPlugin.on("notification:received", function(data){
-	console.log("received:" + JSON.stringify(data));
-	
-	//Silent notifications Only [iOS only]
-	//Send CompletionHandler signal with PushBots notification Id
-	window.plugins.PushbotsPlugin.done(data.pb_n_id);
-    });
 
-// Should be called once the notification is clicked
-       window.plugins.PushbotsPlugin.on("notification:clicked", function(data){
-	   console.log("clicked:" + JSON.stringify(data));
-       });
 };
 
 app.initialize();
