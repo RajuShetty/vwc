@@ -28,6 +28,8 @@ body {
     overflow-y: scroll !important;
     overflow-x: scroll !important;
     -webkit-overflow-scrolling: touch !important;
+    background: url("img/loading.svg") 0px 0px no-repeat; 
+	background-position: top;
 }
 
 #online iframe {
@@ -35,6 +37,8 @@ body {
     height: 100%;  
 	
 }
+
+
 
 
 #offline-footer, #online-footer {
@@ -72,6 +76,7 @@ body {
  * Ionic Buttons
  * --------------------------------------------------
  */
+	
 .button {
   border-color: transparent;
   background-color: #f8f8f8;
