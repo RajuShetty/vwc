@@ -21,7 +21,7 @@
 
     <platform name="ios"></platform>
     <platform name="android"></platform>
-    <preference name="phonegap-version" value="cli-6.3.0" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="android-minSdkVersion" value="14" /><!-- Android 4.0 is minimum supported -->
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString"><string>100</string></gap:config-file>
@@ -61,8 +61,8 @@
     <preference name="webviewbounce" value="false" />
     <preference name="KeyboardDisplayRequiresUserAction" value="false"/>
 
-    <!-- If you are seeing a blank screen on Android on app load, uncomment SplashScreenDelay preference -->
-    <preference name="SplashScreenDelay" value="5000" />
+    <!-- If you are seeing a blank screen on Android on app load, uncomment SplashScreenDelay preference 
+    <preference name="SplashScreenDelay" value="5000" />-->
 
     <!-- No need to edit below this line -->
     <!-- <gap:splash src="splash.png"/>
