@@ -20,7 +20,7 @@
     </author>
 
     <platform name="ios"></platform>
-    <platform name="android"></platform>
+    <platform name="android"></platform>  
     <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="android-minSdkVersion" value="14" /><!-- Android 4.0 is minimum supported -->
 
