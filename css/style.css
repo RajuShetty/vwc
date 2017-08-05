@@ -171,6 +171,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 .bg-slide1 {
 	background: url('../img/slide1.jpg') no-repeat center / cover;
 }
+.bg-yuva {
+	background: url('../img/yuva-slide.png') no-repeat center / cover;
+}
 .bg-blog {
 	background: url('../img/petersilway.jpg') no-repeat center / cover;
 }
