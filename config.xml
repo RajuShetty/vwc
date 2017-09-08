@@ -19,10 +19,10 @@
         vineyard workers church
     </author>
 
-    <platform name="ios"></platform>
+   <!-- <platform name="ios"></platform> -->
     <platform name="android"></platform>  
     <preference name="phonegap-version" value="cli-6.5.0" />
-    <preference name="android-minSdkVersion" value="14" /><!-- Android 4.0 is minimum supported -->
+    <preference name="android-minSdkVersion" value="19" /><!-- Android 4.4 is minimum supported -->
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString"><string>100</string></gap:config-file>
 
@@ -48,9 +48,9 @@
    
 <!--    <gap:plugin name="cordova-plugin-splashscreen" source="npm" spec="3.2.2" />-->
 
-    <platform name="ios">
+    <!--<platform name="ios">
         <gap:plugin name="ionic-plugin-keyboard" source="npm" spec="2.2.1" />
-    </platform>
+    </platform> -->
     
             <!-- Crosswalk enhances Android performance, but makes the app size larger -->
  <!-- <gap:plugin name="cordova-plugin-crosswalk-webview" source="npm" version="1.8.0" /> -->
@@ -91,16 +91,16 @@
     <icon src="res/icon/ios/icon-320.png" gap:platform="ios" width="320" height="320" /> -->
 
     <!-- iPhone 6 / 6+ -->
-    <icon src="res/icon/ios/icon-87.png" gap:platform="ios" width="87" height="87" />
+ <!--   <icon src="res/icon/ios/icon-87.png" gap:platform="ios" width="87" height="87" />
     <icon src="res/icon/ios/icon-60@3x.png" gap:platform="ios" width="180" height="180" />
 
-    <!-- iPhone / iPod Touch  -->
+    <!-- iPhone / iPod Touch 
     <icon src="res/icon/ios/icon-60.png" gap:platform="ios" width="60" height="60" />
-    <icon src="res/icon/ios/icon-60@2x.png" gap:platform="ios" width="120" height="120" />
+    <icon src="res/icon/ios/icon-60@2x.png" gap:platform="ios" width="120" height="120" /> -->
 
-    <!-- iPad -->
+    <!-- iPad 
     <icon src="res/icon/ios/icon-76.png" gap:platform="ios" width="76" height="76" />
-    <icon src="res/icon/ios/icon-76@2x.png" gap:platform="ios" width="152" height="152" />
+    <icon src="res/icon/ios/icon-76@2x.png" gap:platform="ios" width="152" height="152" />-->
 
     <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
@@ -129,9 +129,9 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
-    <platform name="ios">
+    <!--<platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-    </platform>
+    </platform>-->
 
 </widget>
