@@ -20,8 +20,12 @@
     </author>
 
    <!-- <platform name="ios"></platform> -->
-    <platform name="android"></platform>  
-    <preference name="phonegap-version" value="cli-6.5.0" />
+    <platform name="android">
+	<resource-file src="google-services.json" target="google-services.json" />
+        <allow-intent href="market:*" />
+    </platform>  
+    <preference name="phonegap-version" value="cli-7.0.1" />
+	<preference name='pgb-builder-version' value='2' />
     <preference name="android-minSdkVersion" value="19" /><!-- Android 4.4 is minimum supported -->
 
     <!--<gap:config-file platform="ios" parent="CFBundleShortVersionString"><string>100</string></gap:config-file> -->
@@ -41,8 +45,8 @@
     <gap:plugin name="cordova-plugin-geolocation" source="npm" spec="2.2.0" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" spec="1.4.0" />
     <gap:plugin name="cordova-plugin-network-information" source="npm" spec="1.2.1" />
-	<!-- pushboats plugin -->
-	<gap:plugin name="pushbots-cordova-plugin" spec="^1.4.0" source="npm" />
+	<!-- push plugin -->
+	<plugin name="phonegap-plugin-push" spec="2.0.0" />
     <preference name="android-build-tool" value="gradle" />
    
    
