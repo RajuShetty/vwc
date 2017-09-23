@@ -81,7 +81,21 @@ push.on('error', function(e) {
 	console.log("Error");
 });
 	
-	
+	push.on('notification', function(data) {
+     console.log('notification event');
+     var cards = document.getElementById("cards");
+     var push = '<div class="swiper-slide slogan bg-slide gradient-container">' +
+       '<div class="fullscreen-title valign-wrapper">' +
+       '  <div class="valign">' +
+       
+       '      <h1 style="color:#ffffff">' + data.title + '</h1>' +
+       '      <p>' + data.message + '</p>' +
+       '      <p>' + data.additionalData.foreground + '</p>' +
+       
+       '  </div>' +
+       ' </div>' +
+       '</div>';
+     cards.innerHTML += push;
 
      app.push.finish(function() {
          console.log('success');
