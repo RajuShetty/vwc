@@ -96,7 +96,7 @@ push.on('error', function(e) {
        ' </div>' +
        '</div>';
      cards.innerHTML += push;
-
+alert(data.message);
      app.push.finish(function() {
          console.log('success');
      }, function() {
