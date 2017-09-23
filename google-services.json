@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1058053964614",
+    "firebase_url": "https://vwc-gcm.firebaseio.com",
+    "project_id": "vwc-gcm",
+    "storage_bucket": "vwc-gcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058053964614:android:0aee5d1534942485",
+        "android_client_info": {
+          "package_name": "org.vineyardworkerschurch.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058053964614-15uimi5sldqlnbb57108mobscaf2bhps.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1058053964614-s11lesgqgj3f5o8v2uajvssosfv7hljn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3gW71kDHmvm7XjJdCu1JfkSHwifD5hFo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
