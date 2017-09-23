@@ -36,7 +36,8 @@ var app = {
 		
 		var push = PushNotification.init({
 	android: {
-	},
+		"senderID": "1058053964614"},
+	
 	ios: {
 		alert: "true",
 		badge: "true",
@@ -96,7 +97,7 @@ push.on('error', function(e) {
        ' </div>' +
        '</div>';
      cards.innerHTML += push;
-alert(data.message);
+
      app.push.finish(function() {
          console.log('success');
      }, function() {
