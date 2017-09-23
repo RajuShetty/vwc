@@ -36,7 +36,7 @@ var app = {
 		
 		var push = PushNotification.init({
 	android: {
-		"senderID": "1058053964614"},
+		},
 	
 	ios: {
 		alert: "true",
@@ -78,9 +78,7 @@ push.on('error', function(e) {
 	console.log(e.message);
 });
 		
-push.on('error', function(e) {
-	console.log("Error");
-});
+
 	
 	push.on('notification', function(data) {
      console.log('notification event');
