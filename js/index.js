@@ -50,7 +50,7 @@ push.on('registration', function(data) {
 	console.log(data.registrationId);
 	var deviceToken = data.registrationId;
 	$.ajax({
-        "url": "http://vineyardworkerschurch.org/?smpushcontrol=savetoken",
+        "url": "http://vineyardworkerschurch.org/push-vwc/",
         "dataType": "json",
         "method": "POST",
         "data": {
