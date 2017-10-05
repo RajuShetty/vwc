@@ -71,7 +71,7 @@ push.on('notification', function(data) {
 	data.image,
 	data.additionalData
 	console.log(data);
-	navigator.notification.alert(data.message , 'vwc Church', 'exit');
+	alert(data.message);
 });
 
 push.on('error', function(e) {
