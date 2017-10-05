@@ -1,6 +1,30 @@
 // Load modules
 
-var gcm = require('node-gcm');
+var FCM = require('fcm-node');
+// Replace these with your own values.
+var apiKey ="AAAA9ljuQ0Y:APA91bHhPYlRhNBazmHO7S8cdF_QN3woEVSG5L5qLUJEBgwF1F3vwW3GY5_uy2DuxmJILmge29AY7NI5BfFC-kbPfTO6RejbJ8P1BIjG0W8emHyB7vhsDwjqLZPfqIVdp03UNaEMG5FF";
+var deviceID = "my device id";
+var fcm = new FCM(apiKey);
+
+var message = {
+    "to": deviceID,
+    "data": {
+        "info": 'super secret info',
+       
+		"force-start": '1'
+    }
+};
+
+fcm.send(message, function(err, response){
+  if (err) {
+    console.log(err);
+    console.log("Something has gone wrong!");
+  } else {
+    console.log("Successfully sent with response: ", response);
+  }
+});
+
+/*var gcm = require('node-gcm');
 
 // Replace these with your own values.
 var apiKey = "AAAA9ljuQ0Y:APA91bHhPYlRhNBazmHO7S8cdF_QN3woEVSG5L5qLUJEBgwF1F3vwW3GY5_uy2DuxmJILmge29AY7NI5BfFC-kbPfTO6RejbJ8P1BIjG0W8emHyB7vhsDwjqLZPfqIVdp03UNaEMG5FF";
@@ -17,3 +41,4 @@ service.send(message, { registrationTokens: [ deviceID ] }, function (err, respo
 	if(err) console.error(err);
 	else 	console.log(response);
 });
+*/
