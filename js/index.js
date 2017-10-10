@@ -35,23 +35,48 @@ var app = {
     onDeviceReady: function() {
 		
 		var push = PushNotification.init({
-	android: {
-		 "senderID": "1058053964614"
-		},
-	
-	ios: {
-		alert: "true",
-		badge: "true",
-		sound: "true"
-	},
-	windows: {}
-});
+	 "android": {
+         "senderID": "1058053964614"
+     },
+     "ios": {
+       "sound": true,
+       "vibration": true,
+       "badge": true,
+       "categories": {
+         "invite": {
+             "yes": {
+                 "callback": "app.accept", "title": "Accept",
+                 "foreground": true, "destructive": false
+             },
+             "no": {
+                 "callback": "app.reject", "title": "Reject",
+                 "foreground": true, "destructive": false
+             },
+             "maybe": {
+                 "callback": "app.maybe", "title": "Maybe",
+                 "foreground": true, "destructive": false
+             }
+         },
+         "delete": {
+             "yes": {
+                 "callback": "app.doDelete", "title": "Delete",
+                 "foreground": true, "destructive": true
+             },
+             "no": {
+                 "callback": "app.cancel", "title": "Cancel",
+                 "foreground": true, "destructive": false
+             }
+         }
+       }
+     },
+     "windows": {}
+ });
 
 push.on('registration', function(data) {
 	console.log(data.registrationId);
 	var deviceToken = data.registrationId;
 	$.ajax({
-        "url": "http://vineyardworkerschurch.org/push-vwc/",
+        "url": "http://vineyardworkerschurch.org/?smpushcontrol=savetoken",
         "dataType": "json",
         "method": "POST",
         "data": {
@@ -70,10 +95,17 @@ push.on('notification', function(data) {
 	data.count,
 	data.sound,
 	data.image,
+	data.url,
 	data.additionalData
 	console.log(data);
 	navigator.notification.alert(data.message , 'Ok', 'VWC Church');
+	navigator.notification.confirm( 'Watch live?!', AlertConfirmed, 'VWC Church', ['Yes, No']);
+
 });
+
+function AlertConfirmed() {
+    window.location = 'liveprayers.html';
+}
 
 push.on('error', function(e) {
 	console.log(e.message);
@@ -96,7 +128,7 @@ push.on('error', function(e) {
        ' </div>' +
        '</div>';
      cards.innerHTML += push;
-    navigator.notification.alert(data.message , 'Ok', 'VWC Church');
+    
      app.push.finish(function() {
          console.log('success');
      }, function() {
@@ -108,8 +140,19 @@ push.on('error', function(e) {
  
         console.log('deviceready event');
         document.getElementById('regId').innerHTML = 'true';
-		push.on();
-    }
+		
+		
+		
+    },
+ accept: function() {
+   alert("Accepted");
+ },
+ reject: function() {
+   alert("Rejection!");
+ },
+ maybe: function() {
+   alert("Maybe, I dunno. I can't tell for sure");
+ }
 };
 
  app.initialize();
