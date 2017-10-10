@@ -74,7 +74,7 @@ push.on('notification', function(data) {
 	data.additionalData
 	console.log(data);
 	
-	navigator.notification.confirm( 'Watch live?!', AlertConfirmed, 'VWC Church', 'Yes' ,'no');
+	navigator.notification.confirm( 'Watch live?!', AlertConfirmed, 'VWC Church', ['Yes' ,'no']);
 
 });
 
@@ -90,7 +90,6 @@ push.on('error', function(e) {
 	
 	push.on('notification', function(data) {
      console.log('notification event');
-	 	navigator.notification.confirm( 'Watch live?!', AlertConfirmed, 'VWC Church', 'Yes' ,'no');
      var cards = document.getElementById("cards");
      var push = '<div class="swiper-slide slogan bg-slide gradient-container">' +
        '<div class="fullscreen-title valign-wrapper">' +
