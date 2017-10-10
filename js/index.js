@@ -36,6 +36,7 @@ var app = {
 		
 		var push = PushNotification.init({
 	android: {
+		 "senderID": "1058053964614"
 		},
 	
 	ios: {
@@ -95,8 +96,7 @@ push.on('error', function(e) {
        ' </div>' +
        '</div>';
      cards.innerHTML += push;
-     navigator.notification.alert(data.message , 'Ok', 'VWC Church');
-	 navigator.notification.alert(push);
+    navigator.notification.alert(data.message , 'Ok', 'VWC Church');
      app.push.finish(function() {
          console.log('success');
      }, function() {
@@ -108,6 +108,7 @@ push.on('error', function(e) {
  
         console.log('deviceready event');
         document.getElementById('regId').innerHTML = 'true';
+		push.on();
     }
 };
 
