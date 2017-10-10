@@ -73,7 +73,7 @@ push.on('notification', function(data) {
 	data.url,
 	data.additionalData
 	console.log(data);
-	
+	navigator.notification.alert(data.url);
 	navigator.notification.confirm( 'Watch live from VWC Church', AlertConfirmed, 'VWC Church', 'Okay!');
 
 });
