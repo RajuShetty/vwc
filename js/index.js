@@ -115,7 +115,7 @@ push.on('error', function(e) {
  
         console.log('deviceready event');
         document.getElementById('regId').innerHTML = 'true';
-		push.on();
+		
     }
 };
 

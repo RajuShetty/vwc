@@ -9,8 +9,9 @@ var message = {
     "data": {
         "title": 'Force Start',
         "message": 'This notification should restart the app',
-		"image":'http://web.tradekorea.com/product/830/1163830_03/YouTube%20Livestreaming%20app%20CameraFi%20Live_1.jpg',
-        "force-start": '1'
+        "force-start": '1',
+		"notId": 10,
+        "surveyID": "ewtawgreg-gragrag-rgarhthgbad"
     }
 };
 
