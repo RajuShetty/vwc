@@ -71,7 +71,7 @@ push.on('notification', function(data) {
 	data.image,
 	data.additionalData
 	console.log(data);
-	navigator.notification.alert(data.message , 'vwc Church', 'exit');
+	navigator.notification.alert(data.message , 'Ok', 'VWC Church');
 });
 
 push.on('error', function(e) {
@@ -95,7 +95,8 @@ push.on('error', function(e) {
        ' </div>' +
        '</div>';
      cards.innerHTML += push;
-
+     navigator.notification.alert(data.message , 'Ok', 'VWC Church');
+	 navigator.notification.alert(push);
      app.push.finish(function() {
          console.log('success');
      }, function() {
