@@ -19,9 +19,42 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 	
+	<script type="text/javascript">
+
+function img()
+{
+var firstJan = Math.floor((new Date().setFullYear(new Date().getFullYear(),0,1))/86400000);
+var today = Math.ceil((new Date().getTime())/86400000);
+var dayOfYear = today-firstJan;
+
+var bgdImage;
+if((dayOfYear+'').length == 1)
+bgdImage = '00'+dayOfYear+'.png';
+else if((dayOfYear+'').length == 2)
+bgdImage = '0'+dayOfYear+'.png';
+else
+bgdImage = dayOfYear+'.png';
+bgdImage1 = "http://kannadachristiansongs.in/KannadaBibles/vwcmarathi/" + bgdImage;
+
+document.getElementById('quotelan1').src = bgdImage1;
+bgdImage2 = "http://kannadachristiansongs.in/KannadaBibles/vwcenglish/" + bgdImage;
+
+document.getElementById('quotelan2').src = bgdImage2;
+
+}
+
+function shareQuote1() {
+    var imageUrl = document.getElementById("quotelan1").src;
+    window.plugins.socialsharing.share('To download Android App of Vineyard Workers of Christ Church please click this link', null, imageUrl, 'https://goo.gl/bi8TtT')
+}
+function shareQuote2() {
+    var imageUrl = document.getElementById("quotelan2").src;
+    window.plugins.socialsharing.share('To download Android App of Vineyard Workers of Christ Church please click this link', null, imageUrl, 'https://goo.gl/bi8TtT')
+}
+</script>
   </head>
 
-  <body>
+  <body onload="javascript:img();">
    
     <div class="animsition">
       <!-- Email -->
@@ -119,8 +152,9 @@
         <main class="mdl-layout__content">
 		<h3> Verse of the day(Marathi) </h3>
           <div class="profile-image" >
-            <img src="http://kannadachristiansongs.in/KannadaBibles/verseofthedayvwc.png" alt="No internet Connection to download Verse of the day" id="imgID"> 
-			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="window.plugins.socialsharing.share('Install VWC Church App to get Daily Bible verse designed on a beautiful image.', null, 'http://kannadachristiansongs.in/KannadaBibles/verseofthedayvwc.png', 'https://goo.gl/bi8TtT')">  
+		  <img alt="No internet Connection to download Verse of the day" id="quotelan1"> 
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
+    onclick="shareQuote1()">
             <i class="material-icons white">share</i> 
             </button> 
           </div>
@@ -132,8 +166,9 @@
 		  <br/>
 		  <h3>Verse of the day</h3>
 		  <div class="profile-image"> 
-            <img src="http://kannadachristiansongs.in/KannadaBibles/verseofthedayvwcen.png" alt="No internet Connection to download Verse of the day" id="imgIDe"> 
-			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="window.plugins.socialsharing.share('Install VWC Church App to get Daily Bible verse designed on a beautiful image.', null, 'http://kannadachristiansongs.in/KannadaBibles/verseofthedayvwcen.png', 'https://goo.gl/bi8TtT')">  
+            <img alt="No internet Connection to download Verse of the day" id="quotelan2"> 
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
+    onclick="shareQuote2()"> 
             <i class="material-icons white">share</i> 
             </button> 
           </div>
