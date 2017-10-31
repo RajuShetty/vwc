@@ -20,11 +20,13 @@
     </author>
 
    <!-- <platform name="ios"></platform> -->
-    <platform name="android">
-	<resource-file src="google-services.json" target="google-services.json" />
-        <allow-intent href="market:*" />
-    </platform>  
-    <preference name="phonegap-version" value="cli-7.0.1" />
+    <!-- one signal push -->
+	<gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" />
+<!-- Requires cli-6.4.0 but we recommend using the latest version. -->
+<preference name="phonegap-version" value="cli-7.0.1" />
+  <preference name="android-build-tool" value="gradle" />
+	<!-- one signal push End --> 
+    
 	<preference name='pgb-builder-version' value='2' />
     <preference name="android-minSdkVersion" value="19" /><!-- Android 4.4 is minimum supported -->
 
@@ -46,8 +48,8 @@
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" spec="1.4.0" />
     <gap:plugin name="cordova-plugin-network-information" source="npm" spec="1.2.1" />
 	<!-- push plugin -->
-	<plugin name="phonegap-plugin-push" spec="2.0.0" />
-    <preference name="android-build-tool" value="gradle" />
+	
+  
    
    
 <!--    <gap:plugin name="cordova-plugin-splashscreen" source="npm" spec="3.2.2" />-->
@@ -123,7 +125,7 @@
     <icon src="icon-new.png" />
 
     <content src="index.html" />
-    <access origin="*.pushbots.com" subdomains="true" />
+    <access origin="*" subdomains="true" />
     <allow-navigation href="*" /><!-- iOS render iframe content -->
     <!-- https://github.com/phonegap/build/issues/508 -->
     <allow-intent href="tel:*" />
