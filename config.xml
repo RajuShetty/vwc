@@ -3,27 +3,27 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "org.vineyardworkerschurch.app"
-        version   = "1.1.0"
-		android-versionCode="10017"
+        id        = "org.vwcchurch.app"
+        version   = "1"
+		android-versionCode="10000"
 		>
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
-    <name>VWC church</name>
+    <name>Vineyard Workers of Christ church</name>
 
     <description>
-        Vineyard workers church, pune.
+        Vineyard workers church is one if the biggest church in pune with thousands of congrigation. 
     </description> 
 
     <author href="http://vineyardworkerschurch.org/" email="Rajushetty.b@gmail.com">
-        vineyard workers church
+        vineyard workers of Christ church
     </author>
 
    <!-- <platform name="ios"></platform> -->
     <!-- one signal push -->
-	<gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" />
+	<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" />
 <!-- Requires cli-6.4.0 but we recommend using the latest version. -->
-<preference name="phonegap-version" value="cli-7.0.1" />
+<preference name="phonegap-version" value="cli-8.0.0" />
   <preference name="android-build-tool" value="gradle" />
 	<!-- one signal push End --> 
     
