@@ -20,11 +20,12 @@
     </author>
 
    <!-- <platform name="ios"></platform> -->
-    <!-- one signal push 
-	<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" />-->
+    <!-- one signal push -->
+	
 <!-- Requires cli-6.4.0 but we recommend using the latest version. -->
 <preference name="phonegap-version" value="cli-8.0.0" />
   <preference name="android-build-tool" value="gradle" />
+  <gap:plugin name="onesignal-cordova-plugin" spec="^2.0.1" source="npm" />
 	<!-- one signal push End 
     
 	<preference name='pgb-builder-version' value='2' />--> 
