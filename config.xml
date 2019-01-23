@@ -25,9 +25,9 @@
 <!-- Requires cli-6.4.0 but we recommend using the latest version. -->
 <preference name="phonegap-version" value="cli-8.0.0" />
   <preference name="android-build-tool" value="gradle" />
-	<!-- one signal push End --> 
+	<!-- one signal push End 
     
-	<preference name='pgb-builder-version' value='2' />
+	<preference name='pgb-builder-version' value='2' />--> 
     <preference name="android-minSdkVersion" value="19" /><!-- Android 4.4 is minimum supported -->
 
     <!--<gap:config-file platform="ios" parent="CFBundleShortVersionString"><string>100</string></gap:config-file> -->
