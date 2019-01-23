@@ -21,7 +21,7 @@
 
    <!-- <platform name="ios"></platform> -->
     <!-- one signal push 
-	<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" />
+	<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" /> -->
 <!-- Requires cli-6.4.0 but we recommend using the latest version. -->
 <preference name="phonegap-version" value="cli-8.0.0" />
   <preference name="android-build-tool" value="gradle" />
